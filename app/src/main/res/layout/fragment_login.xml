@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.akashapplications.shoutube.fragments.Login">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/loginButton"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/loginEmail"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            app:met_floatingLabel="normal"
+            app:met_iconPadding="0dp"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_clearButton="true"
+            app:met_floatingLabelTextColor="@color/colorPrimaryDark"
+            android:layout_marginTop="5dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/loginPassword"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_iconPadding="0dp"
+            app:met_clearButton="true"
+            android:singleLine="true"
+            app:met_floatingLabelTextColor="@color/colorPrimaryDark"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            app:met_floatingLabel="normal" />
+
+
+    </LinearLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginButton"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        fancy:fb_text="Login"
+        fancy:fb_radius="4dp"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#fff"
+        fancy:fb_borderColor="@color/colorPrimaryDark"
+        fancy:fb_textColor="@color/colorPrimaryDark"
+        fancy:fb_focusColor="#72ea8284"
+        fancy:fb_iconPosition="left"
+        fancy:fb_iconPaddingRight="10dp"
+
+        />
+
+</RelativeLayout>

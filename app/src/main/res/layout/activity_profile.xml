@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="11dp"
+    android:background="@color/background"
+    tools:context=".Profile">
+
+    <ScrollView
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/profileButton"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/profileProfileImage"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROFILE"
+                android:textSize="10sp"
+                android:textColor="@color/hint"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hint"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:id="@+id/profileName"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                app:met_floatingLabel="normal"
+                app:met_iconPadding="0dp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_floatingLabelTextColor="@color/colorPrimaryDark"
+                android:layout_marginTop="5dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/profileEmail"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                app:met_floatingLabel="normal"
+                app:met_iconPadding="0dp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_clearButton="true"
+                app:met_floatingLabelTextColor="@color/colorPrimaryDark"
+                android:layout_marginTop="5dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/profilePassword"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                app:met_floatingLabel="normal"
+                app:met_iconPadding="0dp"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_floatingLabelTextColor="@color/colorPrimaryDark"
+                android:layout_marginTop="5dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:singleLine="true"
+                android:inputType="number"
+                app:met_floatingLabel="normal"
+                app:met_iconPadding="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/profileAge"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_clearButton="true"
+                app:met_floatingLabelTextColor="@color/colorPrimaryDark"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:weightSum="2"
+                android:foregroundGravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Gender"
+                    android:layout_weight="0.5"/>
+
+
+                <lib.kingja.switchbutton.SwitchMultiButton
+                    android:layout_weight="0.5"
+                    android:id="@+id/profileGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="4dp"
+                    app:selectedColor="@color/colorPrimaryDark"
+                    app:strokeRadius="5dp"
+                    app:strokeWidth="1dp"
+                    app:textSize="14sp"
+                    app:switchTabs="@array/switch_tabs_gender"/>
+            </LinearLayout>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIDEO"
+                android:textSize="10sp"
+                android:textColor="@color/hint"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hint"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Channel ID from YouTube"
+                android:singleLine="true"
+                android:inputType="text"
+                app:met_floatingLabel="normal"
+                app:met_iconPadding="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/profileChannelID"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_clearButton="true"
+                app:met_floatingLabelTextColor="@color/colorPrimaryDark"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
